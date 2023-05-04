@@ -15,7 +15,17 @@
 @import url('./footer.css');
 @import url('./modal-window.css');
 
+@font-face {
+  font-family: 'Epilogue';
+  src: url(../fonts/Epilogue-Regular.ttf), url(../fonts/Epilogue-Light.ttf),
+    url(../fonts/Epilogue-SemiBold.ttf);
+}
+
 :root {
+}
+
+body {
+  font-family: 'Epilogue';
 }
 
 .section {
