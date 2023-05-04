@@ -1,8 +1,8 @@
 /* !-------!-------!-------!------MODAL-BACKdrop-!-------!-------!-------!-------!-------!-------!-------!-------!-------!-------!-------!------- */
 
 .overlay {
-  /* opacity: 0;
-  visibility: hidden; */
+  opacity: 0;
+  visibility: hidden;
 
   position: fixed;
   top: 0;
@@ -17,8 +17,8 @@
 .modal {
   display: flex;
   flex-direction: column;
-  /* opacity: 0;
-  visibility: hidden; */
+  opacity: 0;
+  visibility: hidden;
 
   width: 100%;
   max-width: 335px;
