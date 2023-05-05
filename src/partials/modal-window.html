@@ -20,44 +20,46 @@
   </div>
 
   <form class="modal__form">
-    <div class="form-field">
-      <label class="modal__form-label" for="user-name">Full name</label
-      ><input
-        class="modal__form-imput"
-        id="user-name"
-        type="text"
-        placeholder="Enter your full name"
-        required
-      />
-    </div>
-    <div class="form-field">
-      <label class="modal__form-label" for="user-email">Email</label>
-      <input
-        class="modal__form-imput"
-        type="email"
-        id="user-email"
-        placeholder="Enter your email"
-        required
-      />
-    </div>
-    <div class="form-field">
-      <label class="modal__form-label">Card number</label
-      ><input
-        class="modal__form-imput"
-        type="tel"
-        required
-        placeholder="Enter card"
-        pattern="[0-9]{16}"
-      />
-    </div>
-    <div class="form-field">
-      <label for="textarea" class="modal__form-label">Comments</label
-      ><textarea
-        class="modal-textarea modal__form-imput"
-        name="comment"
-        id="textarea"
-        placeholder="Text input"
-      ></textarea>
+    <div class="modal__top">
+      <div class="form-field">
+        <label class="modal__form-label" for="user-name">Full name</label
+        ><input
+          class="modal__form-imput"
+          id="user-name"
+          type="text"
+          placeholder="Enter your full name"
+          required
+        />
+      </div>
+      <div class="form-field">
+        <label class="modal__form-label" for="user-email">Email</label>
+        <input
+          class="modal__form-imput"
+          type="email"
+          id="user-email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="form-field">
+        <label class="modal__form-label">Card number</label
+        ><input
+          class="modal__form-imput"
+          type="tel"
+          required
+          placeholder="Enter card"
+          pattern="[0-9]{16}"
+        />
+      </div>
+      <div class="form-field">
+        <label for="textarea" class="modal__form-label">Comments</label
+        ><textarea
+          class="modal-textarea modal__form-imput"
+          name="comment"
+          id="textarea"
+          placeholder="Text input"
+        ></textarea>
+      </div>
     </div>
     <div class="modal__bottom">
       <button class="modal__send-button button" type="submit">submit</button>
