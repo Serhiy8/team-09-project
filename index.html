@@ -6,12 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team 09 project</title>
     
-    <script type="module" crossorigin src="/team-09-project/assets/index-7ae64c72.js"></script>
-    <link rel="stylesheet" href="/team-09-project/assets/index-727bb634.css">
+    <script type="module" crossorigin src="/team-09-project/assets/index-69503cab.js"></script>
+    <link rel="stylesheet" href="/team-09-project/assets/index-c84965aa.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">Hello</div>
+  <div class="navigation container">
+    <nav class="header-navigation">
+      <a class="header-logo link" href="./index.html">
+        <img src="/team-09-project/assets/header-logo-f2e3c020.svg" alt="site logo" />
+        thewatchspot
+      </a>
+      <ul class="header-list list">
+        <li class="header-item"><a href="#about-us">About us</a></li>
+        <li class="header-item"><a href="#catalog">Catalog</a></li>
+        <li class="header-item"><a href="#sale">Sale</a></li>
+      </ul>
+    </nav>
+    <a class="header-number link" href="tel:+380684439426"
+      >+380 (68) 443-94-26</a
+    >
+    <button class="menu-open-btn" type="button" data-menu-open>
+      <svg class="mobile-menu-open-icon" width="24" height="24">
+        <use href="/team-09-project/assets/icons-b5236364.svg#icon-gg_menu"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="mobile-menu is-hidden" data-menu>
+    <div class="mobile-menu-wrap">
+      <a class="header-logo link" href="./index.html">
+        <img src="/team-09-project/assets/header-logo-f2e3c020.svg" alt="site logo" />
+        thewatchspot
+      </a>
+      <button class="menu-close-btn is-open" type="button" data-menu-close>
+        <svg class="mobile-menu-close-icon" width="24" height="24">
+          <use href="/team-09-project/assets/icons-b5236364.svg#icon-close-x"></use>
+        </svg>
+      </button>
+    </div>
+    <nav class="nav-menu">
+      <ul class="mobile-menu-list list">
+        <li class="mobile-menu-item"><a href="#about-us">About us</a></li>
+        <li class="mobile-menu-item"><a href="#catalog">Catalog</a></li>
+        <li class="mobile-menu-item"><a href="#sale">Sale</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 
@@ -509,22 +550,16 @@
 
     <!-- Modal window -->
     <div class="modal" data-modal="1">
-  <!--   Svg иконка для закрытия окна  -->
-  <svg class="modal__cross js-modal-close"><use></use></svg>
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
+  <button class="modal__cross js-modal-close" type="button">
+    <svg class="modal__cross-svg">
+      <use href="/team-09-project/assets/icons-b5236364.svg#icon-close-x"></use>
+    </svg>
+  </button>
   <div class="modal-card">
     <img
-      class=""
-      srcset="/team-09-project/assets/modal-watch@2x-24312650.png 2x"
-      src="/team-09-project/assets/modal-watch-4d44fee2.png"
+      class="modal-card-image"
+      srcset="/team-09-project/assets/modal-watch@2x-085ee9aa.png 2x"
+      src="/team-09-project/assets/modal-watch-73607a70.png"
       width="276"
       height="325"
       alt="hand-watch-steel-with-black"
@@ -535,32 +570,61 @@
     <p class="modal-card-text">€395</p>
   </div>
 
-  <form class="modal-form">
+  <form class="modal__form">
     <div class="form-field">
-      <label for="">Full name <input type="text" /></label>
+      <label class="modal__form-label" for="user-name">Full name</label
+      ><input
+        class="modal__form-imput"
+        id="user-name"
+        type="text"
+        placeholder="Enter your full name"
+        required
+      />
     </div>
     <div class="form-field">
-      <label for="">Email<input type="text" /></label>
+      <label class="modal__form-label" for="user-email">Email</label>
+      <input
+        class="modal__form-imput"
+        type="email"
+        id="user-email"
+        placeholder="Enter your email"
+        required
+      />
     </div>
     <div class="form-field">
-      <label for="">Card number</label><input type="text" />
+      <label class="modal__form-label">Card number</label
+      ><input
+        class="modal__form-imput"
+        type="tel"
+        required
+        placeholder="Enter card"
+        pattern="[0-9]{16}"
+      />
     </div>
     <div class="form-field">
-      <label for="">Comments</label
-      ><input type="text" placeholder="Enter your text" />
+      <label for="textarea" class="modal__form-label">Comments</label
+      ><textarea
+        class="modal-textarea modal__form-imput"
+        name="comment"
+        id="textarea"
+        placeholder="Text input"
+      ></textarea>
     </div>
-    <button class="send-button" type="submit">submit</button>
+    <div class="modal__bottom">
+      <button class="modal__send-button button" type="submit">submit</button>
+      <p class="policy-text">
+        By clicking on “Submit” button, you agree to our
+        <a class="policy link">Privacy Policy</a>, and allow Promodo to use this
+        information for marketing purposes.
+      </p>
+    </div>
   </form>
-  <p class="policy-text">
-    By clicking on <code>“Submit”</code> button, you agree to our
-    <a class="policy">Privacy Policy</a>, and allow Promodo to use this
-    information for marketing purposes.
-  </p>
 </div>
 
 <!-- Подложка под модальным окном -->
 <div class="overlay js-overlay-modal"></div>
 
+    
     
   </body>
 </html>
