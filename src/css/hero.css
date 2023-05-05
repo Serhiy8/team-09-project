@@ -1,2 +1,27 @@
 .hero {
+    h1 {
+    padding: 0; margin: 0;
+}
+
+.section-hero {
+background-color: #141414;
+padding: 69px 0 40px 0;
+}
+
+.hero-title {
+width: 335px;
+font-family: 'Epilogue';
+font-weight: 600;
+font-size: 38px;
+line-height: 1.052;
+letter-spacing: -0.04em;
+color: #FFFFFF;
+margin-bottom: 60px;
+}
+
+.swiper-background {
+    background-color: #1E2827;
+    width: 266px;
+    height: 200px;
+}
 }

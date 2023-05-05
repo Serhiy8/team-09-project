@@ -1,2 +1,94 @@
 .footer {
+  background-color: #1e2827;
+  padding: 40px 20px 20px;
+  display: flex;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-logo-icon {
+  width: 40px;
+  height: 40px;
+  fill: #ffffff;
+  /* stroke #ffffff; */
+  margin-bottom: 20px;
+}
+
+.footer-phon {
+  display: block;
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  color: #ffffff;
+  width: 140px;
+  height: 54px;
+  margin-bottom: 40px;
+}
+
+.mob-soc-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: flex-start;
+  /* justify-content: center; */
+  margin-bottom: 80px;
+}
+
+.mob-soc-item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mob-soc-icon {
+  width: 24px;
+  height: 24x;
+  fill: #f4f4fd;
+}
+
+.mob-soc-link:hover,
+.mob-soc-link:focus {
+  fill: #ffffff;
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #c6cdd1;
+}
+
+.footer-copyrigth {
+  margin-bottom: 14px;
+}
+
+.footer-menu-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-menu-item:not(:last-child) {
+  margin-bottom: 14px;
 }
