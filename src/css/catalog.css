@@ -1,6 +1,7 @@
 .catalog__title {
     font-weight: 600;
     letter-spacing: -0.02em;
+    color: var(--dark-green);
 }
 
 .catalog__item {
@@ -72,6 +73,7 @@
     font-size: 14px;
     line-height: 18px;
     letter-spacing: -0.02em;
+    color: var(--black-color);
 
     margin-bottom: 4px;
 }
