@@ -33,7 +33,7 @@
     position: absolute;
     top: 0;
 
-    background: #1E2827;
+    background: var(--dark-green);
     border-radius: 8px;
 
     opacity: 0;
@@ -54,7 +54,7 @@
     font-size: 14px;
     line-height: calc(18 / 14);
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: var(--white);
     text-transform: uppercase;
 
     margin-bottom: 10px;
@@ -87,12 +87,12 @@
     display: block;
     font-size: 12px;
     line-height: calc(14 / 12);
-    color: #FFFFFF;
+    color: var(--white);
 
     margin-left: auto;
 
     text-transform: uppercase;
-    background: #1E2827;
+    background: var(--dark-green);
     border: none;
     border-radius: 8px;
 }
