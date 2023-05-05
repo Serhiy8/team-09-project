@@ -17,6 +17,10 @@
     stroke: rgba(20, 20, 20, 0.1);
 }
 
+.catalog__like-icon.like-active {
+    fill: #1e2827;
+}
+
 .catalog__overlay {
     position: relative;
     overflow: hidden;
