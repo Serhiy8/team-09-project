@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team 09 project</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link   rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
   </head>
   <body>
     <load ="partials/header.html" />
@@ -33,5 +35,25 @@
     <!-- Modal window -->
     <load ="partials/modal-window.html" />
     <script type="module" src="./main.js"></script>
+
+    <!-- -- Swiper JS --  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- -- Initialize Swiper --  -->
+    <script>
+const swiper = new Swiper('.mySwiper', {
+slidesPerView: 1,
+spaceBetween: 10,
+loop: true,
+keyboard: {
+  enabled: true,
+},
+navigation: {
+  nextEl: '.next-button',
+  prevEl: '.previous-button',
+},
+});
+</script>
+
   </body>
 </html>

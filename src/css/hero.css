@@ -1,4 +1,4 @@
-.hero {
+
     h1 {
     padding: 0; margin: 0;
 }
@@ -18,10 +18,25 @@ letter-spacing: -0.04em;
 color: #FFFFFF;
 margin-bottom: 60px;
 }
+img {padding: 0; margin: auto;
 
-.swiper-background {
-    background-color: #1E2827;
-    width: 266px;
-    height: 200px;
 }
+
+.swiper-frame {
+  width: 266px;
+}
+
+.swiper {
+    width: 266px;
+    margin: 0; padding: 0;
+    background-color: #1E2827;
+}
+
+.swiper-buttons {
+}
+.previous-button, .next-button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+border-radius: 8px;
 }
