@@ -82,6 +82,10 @@
 }
 
 /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+.modal-card {
+  max-width: 276px;
+  margin: 0 auto;
+}
 .modal-card-image {
   margin: 0 auto;
 }
