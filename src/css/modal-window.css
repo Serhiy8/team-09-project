@@ -71,26 +71,6 @@
   width: 100%;
   height: 100%;
 }
-@media screen and (min-width: 768px) {
-  .modal {
-    max-width: 744px;
-  }
-  .modal__cross {
-    width: 24px;
-    height: 24px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .ovarlay {
-    padding-top: 0;
-  }
-  .modal {
-    max-width: 944px;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
 
 /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
 .modal-card {
@@ -115,9 +95,13 @@
   color: rgba(20, 20, 20, 0.5);
 }
 .modal__form {
+  width: 100%;
+}
+.modal__top {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  margin-bottom: 20px;
 }
 .form-field {
   display: flex;
@@ -154,7 +138,7 @@
 
 .modal__send-button {
   display: inline-block;
-  margin: 20px auto 12px;
+  margin-bottom: 12px;
   padding: 18px auto;
   width: 100%;
   height: 50px;
@@ -183,4 +167,40 @@
 }
 .policy {
   text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    flex-direction: row;
+    gap: 20px;
+    max-width: 744px;
+    padding: 40px;
+  }
+  .modal__cross {
+    top: 20px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+  }
+  .modal__form {
+    width: 368px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .ovarlay {
+    padding-top: 0;
+  }
+  .modal {
+    max-width: 944px;
+    gap: 40px;
+    /* top: 50%;
+    transform: translate(-50%, -50%); */
+  }
+  .modal__form {
+    width: 508px;
+  }
+  .modal__top {
+    gap: 24px;
+    margin-bottom: 40px;
+  }
 }
