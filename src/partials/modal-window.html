@@ -4,7 +4,7 @@
   </svg>
   <div class="modal-card">
     <img
-      class=""
+      class="modal-card-image"
       srcset="./img/modal/modal-watch@2x.png 2x"
       src="./img/modal/modal-watch.png"
       width="276"
@@ -23,20 +23,13 @@
       ><input
         class="modal__form-imput"
         id="user-name"
-        type="name"
+        type="text"
         placeholder="Enter your full name"
         required
       />
     </div>
     <div class="form-field">
       <label class="modal__form-label" for="user-email">Email</label>
-      <!-- <label for="user-name" class="modal-label">Name</label> 
-              <input
-                type="text"
-                name="name"
-                class="modal-input"
-                id="user-name"
-                required-->
       <input
         class="modal__form-imput"
         type="email"
@@ -49,9 +42,10 @@
       <label class="modal__form-label">Card number</label
       ><input
         class="modal__form-imput"
-        type="text"
+        type="tel"
         required
         placeholder="Enter card"
+        pattern="[0-9]{16}"
       />
     </div>
     <div class="form-field">
@@ -63,11 +57,11 @@
         placeholder="Text input"
       ></textarea>
     </div>
-    <button class="modal__send-button" type="submit">submit</button>
+    <button class="modal__send-button button" type="submit">submit</button>
   </form>
   <p class="policy-text">
     By clicking on “Submit” button, you agree to our
-    <a class="policy">Privacy Policy</a>, and allow Promodo to use this
+    <a class="policy link">Privacy Policy</a>, and allow Promodo to use this
     information for marketing purposes.
   </p>
 </div>
