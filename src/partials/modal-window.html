@@ -1,7 +1,9 @@
 <div class="modal" data-modal="1">
-  <svg class="modal__cross js-modal-close">
-    <use href="./img/icons.svg#icon-close-x"></use>
-  </svg>
+  <button class="modal__cross js-modal-close" type="button">
+    <svg class="modal__cross-svg">
+      <use href="./img/icons.svg#icon-close-x"></use>
+    </svg>
+  </button>
   <div class="modal-card">
     <img
       class="modal-card-image"
@@ -57,12 +59,14 @@
         placeholder="Text input"
       ></textarea>
     </div>
-    <button class="modal__send-button button" type="submit">submit</button>
-    <p class="policy-text">
-      By clicking on “Submit” button, you agree to our
-      <a class="policy link">Privacy Policy</a>, and allow Promodo to use this
-      information for marketing purposes.
-    </p>
+    <div class="modal__bottom">
+      <button class="modal__send-button button" type="submit">submit</button>
+      <p class="policy-text">
+        By clicking on “Submit” button, you agree to our
+        <a class="policy link">Privacy Policy</a>, and allow Promodo to use this
+        information for marketing purposes.
+      </p>
+    </div>
   </form>
 </div>
 
