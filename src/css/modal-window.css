@@ -123,8 +123,14 @@
   border-radius: 8px;
 }
 
+/* .modal__form-imput:invalid {
+  border: 2px solid red;
+} */
 /* .modal__form-imput::placeholder {
 } */
+.modal__form-imput:not(:focus):not(:placeholder-shown):invalid {
+  border: 2px solid red;
+}
 
 .modal-textarea {
   height: 120px;
