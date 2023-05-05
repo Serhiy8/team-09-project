@@ -1,18 +1,12 @@
 <div class="modal" data-modal="1">
-  <!--   Svg иконка для закрытия окна  -->
-  <svg class="modal__cross js-modal-close"><use></use></svg>
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
+  <button class="modal__cross js-modal-close" type="button">
+    <svg class="modal__cross-svg">
+      <use href="./img/icons.svg#icon-close-x"></use>
+    </svg>
+  </button>
   <div class="modal-card">
     <img
-      class=""
+      class="modal-card-image"
       srcset="./img/modal/modal-watch@2x.png 2x"
       src="./img/modal/modal-watch.png"
       width="276"
@@ -25,27 +19,55 @@
     <p class="modal-card-text">€395</p>
   </div>
 
-  <form class="modal-form">
+  <form class="modal__form">
     <div class="form-field">
-      <label for="">Full name <input type="text" /></label>
+      <label class="modal__form-label" for="user-name">Full name</label
+      ><input
+        class="modal__form-imput"
+        id="user-name"
+        type="text"
+        placeholder="Enter your full name"
+        required
+      />
     </div>
     <div class="form-field">
-      <label for="">Email<input type="text" /></label>
+      <label class="modal__form-label" for="user-email">Email</label>
+      <input
+        class="modal__form-imput"
+        type="email"
+        id="user-email"
+        placeholder="Enter your email"
+        required
+      />
     </div>
     <div class="form-field">
-      <label for="">Card number</label><input type="text" />
+      <label class="modal__form-label">Card number</label
+      ><input
+        class="modal__form-imput"
+        type="tel"
+        required
+        placeholder="Enter card"
+        pattern="[0-9]{16}"
+      />
     </div>
     <div class="form-field">
-      <label for="">Comments</label
-      ><input type="text" placeholder="Enter your text" />
+      <label for="textarea" class="modal__form-label">Comments</label
+      ><textarea
+        class="modal-textarea modal__form-imput"
+        name="comment"
+        id="textarea"
+        placeholder="Text input"
+      ></textarea>
     </div>
-    <button class="send-button" type="submit">submit</button>
+    <div class="modal__bottom">
+      <button class="modal__send-button button" type="submit">submit</button>
+      <p class="policy-text">
+        By clicking on “Submit” button, you agree to our
+        <a class="policy link">Privacy Policy</a>, and allow Promodo to use this
+        information for marketing purposes.
+      </p>
+    </div>
   </form>
-  <p class="policy-text">
-    By clicking on <code>“Submit”</code> button, you agree to our
-    <a class="policy">Privacy Policy</a>, and allow Promodo to use this
-    information for marketing purposes.
-  </p>
 </div>
 
 <!-- Подложка под модальным окном -->
