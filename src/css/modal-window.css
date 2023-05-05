@@ -81,6 +81,10 @@
   margin: 0 auto;
 }
 .modal-card-title {
+  width: 255px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
@@ -88,6 +92,7 @@
   color: var(--black-color);
 }
 .modal-card-text {
+  text-overflow: ellipsis;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
