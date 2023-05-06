@@ -14,31 +14,32 @@
     <a class="header-number link" href="tel:+380684439426"
       >+380 (68) 443-94-26</a
     >
-    <button class="menu-open-btn" type="button" data-menu-open>
-      <svg class="mobile-menu-open-icon" width="24" height="24">
-        <use href="./img/icons.svg#icon-gg_menu"></use>
+    <button type="button" class="menu-button" data-menu-open>
+      <svg class="" width="24" height="24">
+        <use class="icon-menu" href="./img/icons.svg#icon-gg_menu"></use>
       </svg>
     </button>
-  </div>
-
-  <div class="mobile-menu is-hidden" data-menu>
-    <div class="mobile-menu-wrap">
-      <a class="header-logo link" href="./index.html">
-        <img src="./img/header-logo.svg" alt="site logo" />
-        thewatchspot
-      </a>
-      <button class="menu-close-btn is-open" type="button" data-menu-close>
-        <svg class="mobile-menu-close-icon" width="24" height="24">
-          <use href="./img/icons.svg#icon-close-x"></use>
-        </svg>
-      </button>
+    <div class="mobile-menu" data-menu>
+      <div class="mobile-menu-container">
+        <div class="menu-wrap">
+          <a class="header-logo link" href="./index.html">
+            <img src="./img/header-logo.svg" alt="site logo" />
+            thewatchspot
+          </a>
+          <button type="button" class="close-button is-open" data-menu-close>
+            <svg class="" width="24" height="24">
+              <use class="icon-menu" href="./img/icons.svg#icon-close-x"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="mobile-nav">
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu-item"><a href="#about-us">About us</a></li>
+            <li class="mobile-menu-item"><a href="#catalog">Catalog</a></li>
+            <li class="mobile-menu-item"><a href="#sale">Sale</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <nav class="nav-menu">
-      <ul class="mobile-menu-list list">
-        <li class="mobile-menu-item"><a href="#about-us">About us</a></li>
-        <li class="mobile-menu-item"><a href="#catalog">Catalog</a></li>
-        <li class="mobile-menu-item"><a href="#sale">Sale</a></li>
-      </ul>
-    </nav>
   </div>
 </header>
