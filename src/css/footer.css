@@ -111,6 +111,12 @@
   margin-bottom: 14px;
 }
 
+.footer-policy-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
 /* ================ ====================  */
 /* min-width: 375px */
 
@@ -179,6 +185,10 @@
 
   .footer-copyrigth {
     margin-bottom: 0;
+  }
+
+  .footer-policy-list {
+    gap: 18px;
   }
 }
 
