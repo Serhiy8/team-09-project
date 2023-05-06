@@ -26,6 +26,7 @@
 .header-logo img {
   width: 14px;
   height: 14px;
+  transition: 700ms;
 }
 
 .header-item {
@@ -162,5 +163,14 @@
   .container {
     max-width: 1200px;
     padding: 0 12px;
+  }
+
+  .header-logo img {
+    transition: 700ms;
+  }
+
+  .header-logo:hover img {
+    transform: rotate(360deg);
+    transition: 700ms;
   }
 }
