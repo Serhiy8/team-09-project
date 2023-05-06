@@ -90,6 +90,8 @@
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: var(--black-color);
+  margin-top: 14px;
+  margin-bottom: 4px;
 }
 .modal-card-text {
   text-overflow: ellipsis;
