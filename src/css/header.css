@@ -174,3 +174,38 @@
     transition: 700ms;
   }
 }
+
+/* hover effect */
+
+.header-item a {
+  position: relative;
+}
+
+.header-item a:hover {
+  color: #fbfbfb;
+}
+
+.header-item a::after,
+.header-item a:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  border-radius: 1.5px;
+  background-color: #fbfbfb;
+  transition: 250ms;
+}
+
+.header-item a::after {
+  left: 0;
+  bottom: -5px;
+}
+
+.header-item a::before {
+  right: 0;
+  top: -7px;
+}
+.header-item a:hover::after,
+.header-item a:hover::before {
+  width: 100%;
+}
