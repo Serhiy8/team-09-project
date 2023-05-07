@@ -1,2 +1,84 @@
 .sale {
 }
+.section {
+}
+.container {
+}
+.sale-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #141414;
+  margin-bottom: 40px;
+}
+.sale-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sale-item {
+}
+.proposition {
+  margin-bottom: 40px;
+}
+.proposition-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #141414;
+  margin-bottom: 8px;
+}
+
+.proposition-text-t,
+.proposition-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(20, 20, 20, 0.5);
+}
+.proposition-text-t {
+  margin-bottom: 16px;
+}
+.sale-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  color: #141414;
+}
+.information {
+  margin-bottom: 40px;
+}
+
+.information-title,
+.characteristic-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #141414;
+  margin-bottom: 17px;
+}
+.information-text,
+.characteristic-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.01em;
+  color: rgba(20, 20, 20, 0.5);
+}
+.characteristic {
+}
+.characteristic-title {
+}
+.characteristic-list {
+}
+.characteristic-item {
+}
+.sale-box {
+  display: flex;
+}
