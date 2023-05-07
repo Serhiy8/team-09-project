@@ -7,28 +7,73 @@
 
     <ul class="new-watches-list">
       <li class="new-watches-item">
-        <img
-          class="item"
-          srcset="
-            ./img/new-watches/hand-watch.jpg    1x,
-            ./img/new-watches/hand-watch-2x.jpg 2x
-          "
-          src="./img/new-watches/hand-wathces.jpg"
-          alt="hand watches"
-          width="335"
-        />
+        <picture>
+          <source
+            srcset="
+              ./img/new-watches/hand-watch.jpg    1x,
+              ./img/new-watches/hand-watch-2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              ./img/new-watches/hand-watch-tab.jpg    1x,
+              ./img/new-watches/hand-watch-tab-2x.jpg 2x
+            "
+            media="(max-width: 1279px)"
+          />
+          <source
+            srcset="
+              ./img/new-watches/hand-watch-desk.jpg 1x,
+              ./img/new-watches/hand-watch-2x.jpg   2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <img
+            class="item"
+            srcset="
+              ./img/new-watches/hand-watch.jpg    1x,
+              ./img/new-watches/hand-watch-2x.jpg 2x
+            "
+            src="./img/new-watches/hand-wathces.jpg"
+            alt="hand watches"
+          />
+        </picture>
       </li>
       <li class="new-watches-item">
-        <img
-          class="item"
-          srcset="
-            ./img/new-watches/watches.jpg    1x,
-            ./img/new-watches/watches-2x.jpg 2x
-          "
-          src="./img/new-watches/watches.jpg"
-          alt="watches"
-          width="335"
-        />
+        <picture>
+          <source
+            srcset="
+              ./img/new-watches/watches.jpg    1x,
+              ./img/new-watches/watches-2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              ./img/new-watches/watches-tab.jpg    1x,
+              ./img/new-watches/watches-tab-2x.jpg 2x
+            "
+            media="(max-width: 1279px)"
+          />
+          <source
+            srcset="
+              ./img/new-watches/watches-desk.jpg    1x,
+              ./img/new-watches/watches-desk-2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+
+          <img
+            class="item"
+            srcset="
+              ./img/new-watches/watches.jpg    1x,
+              ./img/new-watches/watches-2x.jpg 2x
+            "
+            src="./img/new-watches/watches.jpg"
+            alt="watches"
+          />
+        </picture>
       </li>
     </ul>
   </div>
