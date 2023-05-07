@@ -62,3 +62,15 @@ body {
     padding: 0 12px;
   }
 }
+
+/* button effect */
+
+.push-button {
+  transform: active(1);
+  transition: 200ms;
+}
+
+.push-button:active {
+  transform: scale(0.9);
+  transition: 200ms;
+}
