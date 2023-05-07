@@ -44,15 +44,11 @@
   transition: 250ms all;
 }
 
-/* Стили для активных классов подложки и окна */
-
 .modal.active,
 .overlay.active {
   opacity: 1;
   visibility: visible;
 }
-
-/* Стили для кнопки закрытия */
 
 .modal__cross {
   position: absolute;
@@ -72,7 +68,6 @@
   height: 100%;
 }
 
-/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
 .modal-card {
   max-width: 276px;
   margin: 0 auto;
@@ -94,7 +89,7 @@
   margin-bottom: 4px;
 }
 
-.modal-card:hover .modal-card-title {
+.modal-card-title:hover {
   white-space: normal;
   overflow: visible;
 }
