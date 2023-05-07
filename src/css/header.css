@@ -38,8 +38,8 @@
 }
 
 .header-item-link {
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .header-number {
@@ -203,12 +203,12 @@
 
 .header-item a::after {
   left: 0;
-  bottom: -5px;
+  bottom: 2px;
 }
 
 .header-item a::before {
   right: 0;
-  top: -7px;
+  top: 0px;
 }
 .header-item a:hover::after,
 .header-item a:hover::before {
