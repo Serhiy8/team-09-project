@@ -10,7 +10,7 @@
     
 
     <script type="module" crossorigin src="/team-09-project/assets/index-466200bb.js"></script>
-    <link rel="stylesheet" href="/team-09-project/assets/index-31687da3.css">
+    <link rel="stylesheet" href="/team-09-project/assets/index-c28bc93c.css">
   </head>
   <body>
     <header class="header">
@@ -782,22 +782,49 @@
 
     <ul class="new-watches-list">
       <li class="new-watches-item">
-        <img
-          class="item"
-          srcset="/team-09-project/assets/hand-watch-694a49ee.jpg 1x, /team-09-project/assets/hand-watch-2x-9846b03d.jpg 2x"
-          src="./img/new-watches/hand-wathces.jpg"
-          alt="hand watches"
-          width="335"
-        />
+        <picture>
+          <source
+            srcset="/team-09-project/assets/hand-watch-694a49ee.jpg 1x, /team-09-project/assets/hand-watch-2x-9846b03d.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="/team-09-project/assets/hand-watch-tab-d3fa48ee.jpg 1x, /team-09-project/assets/hand-watch-tab-2x-9905aed0.jpg 2x"
+            media="(max-width: 1279px)"
+          />
+          <source
+            srcset="/team-09-project/assets/hand-watch-desk-3a31617e.jpg 1x, /team-09-project/assets/hand-watch-2x-9846b03d.jpg 2x"
+            media="(min-width: 1280px)"
+          />
+          <img
+            class="item"
+            srcset="/team-09-project/assets/hand-watch-694a49ee.jpg 1x, /team-09-project/assets/hand-watch-2x-9846b03d.jpg 2x"
+            src="./img/new-watches/hand-wathces.jpg"
+            alt="hand watches"
+          />
+        </picture>
       </li>
       <li class="new-watches-item">
-        <img
-          class="item"
-          srcset="/team-09-project/assets/watches-e959d135.jpg 1x, /team-09-project/assets/watches-2x-44642e7b.jpg 2x"
-          src="/team-09-project/assets/watches-e959d135.jpg"
-          alt="watches"
-          width="335"
-        />
+        <picture>
+          <source
+            srcset="/team-09-project/assets/watches-e959d135.jpg 1x, /team-09-project/assets/watches-2x-44642e7b.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="/team-09-project/assets/watches-tab-d9c53fc1.jpg 1x, /team-09-project/assets/watches-tab-2x-f1c07b09.jpg 2x"
+            media="(max-width: 1279px)"
+          />
+          <source
+            srcset="/team-09-project/assets/watches-desk-3c26dde0.jpg 1x, /team-09-project/assets/watches-desk-2x-0961f9d2.jpg 2x"
+            media="(min-width: 1280px)"
+          />
+
+          <img
+            class="item"
+            srcset="/team-09-project/assets/watches-e959d135.jpg 1x, /team-09-project/assets/watches-2x-44642e7b.jpg 2x"
+            src="/team-09-project/assets/watches-e959d135.jpg"
+            alt="watches"
+          />
+        </picture>
       </li>
     </ul>
   </div>
