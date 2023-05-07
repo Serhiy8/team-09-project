@@ -37,6 +37,11 @@
   color: #ffffff;
 }
 
+.header-item-link {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
 .header-number {
   font-size: 9px;
   line-height: 1.33;
