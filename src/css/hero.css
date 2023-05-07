@@ -136,6 +136,8 @@ font-style: normal;
     align-items: center;
 }    
 
+
+
 .section-hero {
     padding: 80px 0 64px 0;
 }
@@ -172,7 +174,7 @@ width: 40px;
 }
 
 .hero-text {
-margin-bottom: 60px;
+margin-bottom: 100px;
 }
 
 .hero-watch-hand {
@@ -206,7 +208,8 @@ padding: 0;
 }
 
 .hero-text {
- width: 282px;   
+ width: 282px;
+ margin-bottom: 77px;   
 }
 
 .hero-watch-hand {
