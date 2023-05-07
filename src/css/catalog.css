@@ -1,9 +1,16 @@
+<<<<<<< Updated upstream
 /* -----basic styles */
 
+=======
+>>>>>>> Stashed changes
 .catalog {
     --transition: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
+<<<<<<< Updated upstream
+=======
+/* ----basic styles */
+>>>>>>> Stashed changes
 .catalog__title {
     font-weight: 600;
     letter-spacing: -0.02em;
@@ -21,6 +28,8 @@
 
     fill: none;
     stroke: rgba(20, 20, 20, 0.1);
+
+    transition: fill var(--transition);
 }
 
 .catalog__like-icon.like-active {
@@ -49,8 +58,17 @@
     opacity: 0;
     pointer-events: none;
 
+<<<<<<< Updated upstream
     transform: scale(0.1);
     transition: transform var(--transition) 50ms, opacity var(--transition);
+=======
+    transform: scale(0.8);
+    transition: transform var(--transition) 50ms, opacity var(--transition);
+}
+
+.catalog__info-item:first-child {
+    margin-bottom: 20px;
+>>>>>>> Stashed changes
 }
 
 .catalog__item-info.visible {
@@ -59,8 +77,24 @@
     transform: scale(1);
 }
 
+<<<<<<< Updated upstream
 .catalog__info-item:first-child {
     margin-bottom: 20px;
+=======
+.catalog__info-icon {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    z-index: 3;
+
+    cursor: pointer;
+
+    fill: rgba(20, 20, 20, 0.3);
+}
+
+.catalog__info-icon.info-active {
+    fill: rgba(255, 255, 255, 0.3);
+>>>>>>> Stashed changes
 }
 
 .catalog__info-box {
@@ -85,6 +119,7 @@
     color: rgba(255, 255, 255, 0.5);
 }
 
+<<<<<<< Updated upstream
 .catalog__info-icon {
     position: absolute;
     bottom: 14px;
@@ -102,6 +137,11 @@
 
 .catalog__item-text {
     width: 276px;
+=======
+.catalog__item-text {
+    max-width: 276px;
+
+>>>>>>> Stashed changes
     font-size: 14px;
     line-height: 18px;
     letter-spacing: -0.02em;
@@ -111,6 +151,11 @@
     text-overflow: ellipsis;
 
     margin-bottom: 4px;
+    background-color: var(--white);
+}
+
+.catalog__item-text:hover {
+    overflow: visible;
 }
 
 .catalog__item-text:hover {
@@ -138,7 +183,11 @@
     border-radius: 8px;
 }
 
+<<<<<<< Updated upstream
 /* -----mobile styles */
+=======
+/* ----mobile styles */
+>>>>>>> Stashed changes
 
 @media screen and (max-width: 767px) {
     .catalog__title {
@@ -178,10 +227,15 @@
     }
 }
 
+<<<<<<< Updated upstream
 /* -----=>tablet styles */
 
 @media screen and (min-width: 768px) {
+=======
+/* ----=>tablet styles */
+>>>>>>> Stashed changes
 
+@media screen and (min-width: 768px) {
     .catalog__title {
         font-size: 40px;
         line-height: calc(44 / 40);
@@ -218,7 +272,11 @@
     }
 }
 
+<<<<<<< Updated upstream
 /* -----desktop styles */
+=======
+/* ----desktop styles */
+>>>>>>> Stashed changes
 
 @media screen and (min-width: 1280px) {
     .catalog__title {
