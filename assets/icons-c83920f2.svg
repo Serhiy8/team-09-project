@@ -32,5 +32,11 @@
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7619" d="M6.857 0.381h18.286c3.577 0 6.476 2.9 6.476 6.476v18.286c0 3.577-2.899 6.476-6.476 6.476h-18.286c-3.577 0-6.476-2.899-6.476-6.476v-18.286c0-3.577 2.9-6.476 6.476-6.476z"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.7619" d="M18.286 20.571l-4.571-4.571 4.571-4.571"></path>
 </symbol>
+<symbol id="icon-plus" viewBox="0 0 28 32">
+<path d="M16 5c0-1.106-0.894-2-2-2s-2 0.894-2 2v9h-9c-1.106 0-2 0.894-2 2s0.894 2 2 2h9v9c0 1.106 0.894 2 2 2s2-0.894 2-2v-9h9c1.106 0 2-0.894 2-2s-0.894-2-2-2h-9v-9z"></path>
+</symbol>
+<symbol id="icon-minus" viewBox="0 0 28 32">
+<path d="M27 16c0 1.106-0.894 2-2 2h-22c-1.106 0-2-0.894-2-2s0.894-2 2-2h22c1.106 0 2 0.894 2 2z"></path>
+</symbol>
 </defs>
 </svg>
