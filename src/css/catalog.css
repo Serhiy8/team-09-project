@@ -1,3 +1,9 @@
+/* -----basic styles */
+
+.catalog {
+    --transition: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
 .catalog__title {
     font-weight: 600;
     letter-spacing: -0.02em;
@@ -15,6 +21,8 @@
 
     fill: none;
     stroke: rgba(20, 20, 20, 0.1);
+
+    transition: fill var(--transition);
 }
 
 .catalog__like-icon.like-active {
@@ -34,7 +42,6 @@
 }
 
 .catalog__item-info {
-    box-sizing: border-box;
     position: absolute;
     top: 0;
 
@@ -44,20 +51,22 @@
     opacity: 0;
     pointer-events: none;
 
-    transition: transform 250ms linear, opacity 250ms linear 50ms;
+    transform: scale(0.1);
+    transition: transform var(--transition) 50ms, opacity var(--transition);
 }
 
 .catalog__item-info.visible {
     opacity: 1;
     pointer-events: all;
+    transform: scale(1);
 }
-
-/* .catalog__item:is(:hover, :focus) .catalog__item-info {
-    opacity: 1;
-} */
 
 .catalog__info-item:first-child {
     margin-bottom: 20px;
+}
+
+.catalog__info-box {
+    pointer-events: none;
 }
 
 .catalog__info-title {
@@ -78,14 +87,41 @@
     color: rgba(255, 255, 255, 0.5);
 }
 
+.catalog__info-icon {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    z-index: 3;
+
+    cursor: pointer;
+
+    fill: rgba(20, 20, 20, 0.3);
+}
+
+.catalog__info-icon.info-active {
+    fill: rgba(255, 255, 255, 0.3);
+}
 
 .catalog__item-text {
+    width: 276px;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: -0.02em;
     color: var(--black-color);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
     margin-bottom: 4px;
+    background-color: var(--white);
+}
+
+.catalog__item-text:hover {
+    overflow: visible;
+}
+
+.catalog__item-text:hover {
+    overflow: visible;
 }
 
 .catalog__item-price {
@@ -109,6 +145,8 @@
     border-radius: 8px;
 }
 
+/* -----mobile styles */
+
 @media screen and (max-width: 767px) {
     .catalog__title {
         font-size: 32px;
@@ -129,34 +167,27 @@
         margin-bottom: 40px;
     }
 
-
-
     .catalog__overlay {
         width: 100%;
         height: 360px;
     }
 
     .catalog__item-info {
-        /* left: 100%; */
-
         width: 100%;
         max-width: 336px;
         height: 360px;
 
-        padding: 46px 60px 40px 40px;
+        padding: 40px 60px 40px 40px;
     }
-
-    /* .catalog__item:is(:hover, :focus) .catalog__item-info {
-        transform: translateX(-100%);
-    } */
 
     .catalog__btn {
         padding: 14px 28px;
     }
 }
 
-@media screen and (min-width: 768px) {
+/* -----=>tablet styles */
 
+@media screen and (min-width: 768px) {
     .catalog__title {
         font-size: 40px;
         line-height: calc(44 / 40);
@@ -185,29 +216,15 @@
         width: 336px;
         height: 360px;
 
-        padding: 46px 60px 40px 40px;
+        padding: 40px 60px 40px 40px;
     }
-
-    /* .catalog__item:nth-child(odd) .catalog__item-info {
-        left: -100%;
-    }
-
-    .catalog__item:nth-child(odd):is(:hover, :focus) .catalog__item-info {
-        transform: translateX(100%);
-    }
-
-    .catalog__item:nth-child(even) .catalog__item-info {
-        left: 100%;
-    }
-
-    .catalog__item:nth-child(even):is(:hover, :focus) .catalog__item-info {
-        transform: translateX(-100%);
-    } */
 
     .catalog__btn {
         padding: 18px 35px;
     }
 }
+
+/* -----desktop styles */
 
 @media screen and (min-width: 1280px) {
     .catalog__title {
@@ -233,22 +250,6 @@
         width: 276px;
         height: 325px;
 
-        padding: 26px 20px 20px;
+        padding: 20px;
     }
-
-    /* .catalog__item:is(:nth-child(-n + 2), :nth-child(5), :nth-child(6), :nth-child(9), :nth-child(10)) .catalog__item-info {
-        left: -100%;
-    }
-
-    .catalog__item:is(:nth-child(-n + 2), :nth-child(5), :nth-child(6), :nth-child(9), :nth-child(10)):is(:hover, :focus) .catalog__item-info {
-        transform: translateX(100%);
-    }
-
-    .catalog__item:is(:nth-child(3), :nth-child(4), :nth-child(7), :nth-child(8), :nth-child(n+11)) .catalog__item-info {
-        left: 100%;
-    }
-
-    .catalog__item:is(:nth-child(3), :nth-child(4), :nth-child(7), :nth-child(8), :nth-child(n+11)):is(:hover, :focus) .catalog__item-info {
-        transform: translateX(-100%);
-    } */
 }

@@ -93,6 +93,12 @@
   margin-top: 14px;
   margin-bottom: 4px;
 }
+
+.modal-card:hover .modal-card-title {
+  white-space: normal;
+  overflow: visible;
+}
+
 .modal-card-text {
   text-overflow: ellipsis;
   font-weight: 400;

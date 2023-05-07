@@ -4,7 +4,7 @@ items.forEach(item => {
   const likeIcon = item.querySelector('.catalog__like-icon');
   let likeActive = false;
 
-  item.addEventListener('dblclick', (event) => {
+  item.addEventListener('dblclick', () => {
     if (likeActive) {
       likeIcon.classList.remove('like-active');
       likeActive = false;
