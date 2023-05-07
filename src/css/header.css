@@ -75,10 +75,6 @@
   transition: transform 300ms linear;
 }
 
-.mobile-menu-container {
-  height: 100%;
-}
-
 .mobile-menu.is-open {
   transform: translateX(0);
 }
