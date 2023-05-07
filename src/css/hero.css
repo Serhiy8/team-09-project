@@ -8,6 +8,11 @@ background-color: #141414;
 padding: 69px 0 40px 0;
 }
 
+.container-section-hero {
+display: flex;
+flex-wrap: wrap;
+}
+
 .hero-title {
 width: 335px;
 font-family: 'Epilogue';
@@ -22,21 +27,154 @@ img {padding: 0; margin: auto;
 
 }
 
+/* .swiper-section-slider {
+    margin-bottom: 40px;
+} */
+
 .swiper-frame {
   width: 266px;
+  margin-bottom: 20px;
+ 
 }
 
 .swiper {
     width: 266px;
-    margin: 0; padding: 0;
-    background-color: #1E2827;
 }
 
 .swiper-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
 }
 .previous-button, .next-button {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #FFFFFF;
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
 border-radius: 8px;
+}
+
+.next-button .next-btn-svg {
+   stroke: rgba(255, 255, 255, 0.5);
+   fill: #141414;
+   width: 4.5px; height: 9px;
+}
+.previous-button .previous-btn-svg {
+stroke: rgba(255, 255, 255, 0.5);
+fill: #141414;
+
+}
+.next-button:focus .next-btn-svg {
+    stroke: #FFFFFF;
+    
+}
+.previous-button:focus .previous-btn-svg {
+    stroke: #FFFFFF;
+}
+
+.previous-button:focus  {
+     border: 1px solid #FFFFFF;
+}
+.next-button:focus {
+     border: 1px solid #FFFFFF;
+}
+
+.swiper-btn-and-numeros {
+   display: flex;
+   justify-content: start;
+    width: 266px; 
+    height: 32px;
+     margin-bottom: 40px;
+}
+
+.swiper-btn-and-numeros .pagination-style {
+  color: #FFFFFF;
+width: 74px;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+
+}
+
+/* .svg-swiper-dash {
+   border: 1px solid #FFFFFF;
+   width: 32px;
+} */
+  
+.swiper-buttons .previous-button, .next-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.previous-btn-svg {
+    width: 4.5px;
+    height: 9px;
+    }
+
+.hero-text {
+width: 248px;
+font-weight: 300;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+color: #FFFFFF;
+margin: 0 0 40px auto; 
+font-style: normal;
+}
+
+.hero-watch-hand {
+    width: 335px;
+}
+
+/* --Media Screen Tablet--  */
+
+@media screen and (min-width: 768px) {
+
+.container-section-hero {
+    align-items: center;
+}    
+
+.section-hero {
+    padding: 80px 0 64px 0;
+}
+
+.hero-title {
+width: 653px; 
+font-size: 60px;
+line-height: 1.033;
+}
+
+.hero-text {
+margin-bottom: 60px;
+}
+
+}
+
+@media screen and (min-width: 1280px) {
+
+.hero-title {
+
+width: 750px;
+margin-bottom: 43px;
+}
+
+.container-section-hero {
+position: relative;
+}
+
+.swiper-section-slider {
+position: absolute;
+top: 246px;
+margin: 0;
+padding: 0;
+}
+
+.hero-text {
+ width: 282px;   
+}
+
+.hero-watch-hand {
+    margin-left: 632px;
+}
+
 }
