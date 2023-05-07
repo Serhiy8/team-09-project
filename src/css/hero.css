@@ -27,15 +27,15 @@ img {padding: 0; margin: auto;
 
 }
 
-/* .swiper-section-slider {
+.swiper-section-slider {
     margin-bottom: 40px;
-} */
+    position: relative;
+    float: left;
+}
 
 .swiper-frame {
-  width: 266px;
-  margin-bottom: 20px;
- 
-}
+   margin-bottom: 20px;
+ }
 
 .swiper {
     width: 266px;
@@ -81,24 +81,26 @@ fill: #141414;
 .swiper-btn-and-numeros {
    display: flex;
    justify-content: start;
-    width: 266px; 
-    height: 32px;
-     margin-bottom: 40px;
 }
 
-.swiper-btn-and-numeros .pagination-style {
-  color: #FFFFFF;
+.pagination-style {
+color: #FFFFFF;
 width: 74px;
 font-size: 14px;
 line-height: 1.29;
 letter-spacing: -0.02em;
-
+position: absolute;
+bottom: 0;
+left: 192px;
+display: flex;
+align-items: center;
 }
 
-/* .svg-swiper-dash {
+.swiper-dash {
    border: 1px solid #FFFFFF;
    width: 32px;
-} */
+   margin: 0 6px;
+}
   
 .swiper-buttons .previous-button, .next-button {
     display: flex;
@@ -144,14 +146,48 @@ font-size: 60px;
 line-height: 1.033;
 }
 
+.swiper {
+    width: 436px;
+}
+
+.previous-button, .next-button {
+  width: 40px;
+    height: 40px;   
+}
+
+.next-button .next-btn-svg {
+width: 6px; height: 12px;
+}
+.previous-button .previous-btn-svg {
+width: 6px; height: 12px;
+}
+
+.pagination-style {
+width: 82px;
+left: 354px;    
+}
+
+.swiper-dash {
+width: 40px;    
+}
+
 .hero-text {
 margin-bottom: 60px;
 }
 
+.hero-watch-hand {
+    width: 704px;
 }
+
+}
+
+/* --Media Screen PC--  */
 
 @media screen and (min-width: 1280px) {
 
+.section-hero {
+    padding: 80px 0;
+}    
 .hero-title {
 
 width: 750px;
@@ -174,7 +210,8 @@ padding: 0;
 }
 
 .hero-watch-hand {
-    margin-left: 632px;
+ margin-left: 488px;
+ max-width: 676px;
 }
 
 }

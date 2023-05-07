@@ -18,7 +18,7 @@ navigation: {
     el: '.swiper-pagination',
     type: 'fraction',
     renderFraction: function (currentClass, totalClass) {
-return '0<span class="' + currentClass + '"></span>' + '-----' 
+return '0<span class="' + currentClass + '"></span>' + '<div class="swiper-dash"></div>' 
 + '0<span class="' + totalClass + '"></span>';
     },
     
