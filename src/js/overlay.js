@@ -9,7 +9,7 @@ items.forEach(open => {
 
     infoIcon.addEventListener('click', (event) => {
         event.stopPropagation(); // зупинити подальше вспливання подій
-        if (event.detail <= 1) {
+        if (event.detail === 1) {
             if (infoVisible) {
             infoCh.classList.remove('visible');
             infoVisible = false;
@@ -34,7 +34,7 @@ items.forEach(open => {
     });
 
     infoIcon.addEventListener('touchend', (event) => {
-        if (event.detail <= 1) {
+        if (event.detail === 1) {
             if (infoVisible) {
                 infoCh.classList.remove('visible');
                 infoVisible = false;
@@ -48,4 +48,13 @@ items.forEach(open => {
             }
         }
     });
+
+    open.addEventListener('touchend', (event) => {
+    if (event.target === infoCh && infoVisible) {
+      infoCh.classList.remove('visible');
+      infoVisible = false;
+      infoIcon.classList.remove('info-active');
+      infoActive = false;
+    }
+  });
 })
