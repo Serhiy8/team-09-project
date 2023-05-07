@@ -6,6 +6,7 @@
 */
 @import url('./reset.css');
 @import url('./modern-normalize.css');
+@import url('./fonts.css');
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./about-us.css');
@@ -15,12 +16,6 @@
 @import url('./footer.css');
 @import url('./modal-window.css');
 
-@font-face {
-  font-family: 'Epilogue';
-  src: url(../fonts/Epilogue-Regular.ttf), url(../fonts/Epilogue-Light.ttf),
-    url(../fonts/Epilogue-SemiBold.ttf);
-}
-
 :root {
   --black-color: #141414;
   --dark-green: #1e2827;
@@ -29,6 +24,7 @@
 
 body {
   font-family: 'Epilogue';
+  background-color: #fbfbfb;
 }
 
 .section {

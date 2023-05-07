@@ -1,3 +1,49 @@
 <header class="header">
-  <div class="container">Hello</div>
+  <div class="navigation container">
+    <nav class="header-navigation">
+      <a class="header-logo link" href="./index.html">
+        <img src="./img/header/header-logo.svg" alt="site logo" />
+        thewatchspot
+      </a>
+      <ul class="header-list list">
+        <li class="header-item">
+          <a href="#about-us" class="header-item-link">About us</a>
+        </li>
+        <li class="header-item">
+          <a href="#catalog" class="header-item-link">Catalog</a>
+        </li>
+        <li class="header-item">
+          <a href="#sale" class="header-item-link">Sale</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="header-number link" href="tel:+380684439426"
+      >+380 (68) 443-94-26</a
+    >
+    <button type="button" class="menu-button" data-menu-open>
+      <svg class="" width="24" height="24">
+        <use class="icon-menu" href="./img/icons.svg#icon-gg_menu"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu" data-menu>
+      <div class="menu-wrap">
+        <a class="header-logo link" href="./index.html">
+          <img src="./img/header/header-logo.svg" alt="site logo" />
+          thewatchspot
+        </a>
+        <button type="button" class="close-button is-open" data-menu-close>
+          <svg class="" width="24" height="24">
+            <use class="icon-menu" href="./img/icons.svg#icon-close-x"></use>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-nav">
+        <ul class="mobile-menu-list list">
+          <li class="mobile-menu-item"><a href="#about-us">About us</a></li>
+          <li class="mobile-menu-item"><a href="#catalog">Catalog</a></li>
+          <li class="mobile-menu-item"><a href="#sale">Sale</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </header>

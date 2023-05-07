@@ -1,2 +1,89 @@
-.new-watches {
+.new-watches-title {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.06em;
+  color: rgba(20, 20, 20, 0.4);
+  margin-bottom: 8px;
+}
+.text {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #141414;
+  margin-bottom: 40px;
+}
+
+.new-watches-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.item {
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .new-watches-title {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.06em;
+    color: rgba(20, 20, 20, 0.4);
+    margin-bottom: 8px;
+  }
+  .text {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #1e2827;
+  }
+  .text-wrap {
+    max-width: 448px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .new-watches-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .item {
+    width: 342px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .new-watches-title {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.06em;
+    color: rgba(20, 20, 20, 0.4);
+    margin-bottom: 8px;
+  }
+  .text {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #1e2827;
+    margin-bottom: 80px;
+  }
+  .text-wrap {
+    max-width: 448px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .new-watches-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .item {
+    width: 576px;
+  }
 }
