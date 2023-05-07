@@ -76,7 +76,23 @@ fill: #141414;
 }
 .next-button:focus {
      border: 1px solid #FFFFFF;
+     
 }
+
+.next-button:hover {
+animation:shake-bottom .8s cubic-bezier(.455,.03,.515,.955) both;
+cursor: pointer;
+
+}
+
+.previous-button:hover {
+  animation:shake-bottom .8s cubic-bezier(.455,.03,.515,.955) both; 
+  cursor: pointer;
+}
+
+@keyframes shake-bottom{0%,100%{transform:rotate(0deg);transform-origin:50% 100%}10%
+{transform:rotate(2deg)}20%,40%,60%{transform:rotate(-4deg)}30%,50%,70%{transform:rotate(4deg)}80%
+{transform:rotate(-2deg)}90%{transform:rotate(2deg)}}
 
 .swiper-btn-and-numeros {
    display: flex;
