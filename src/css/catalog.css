@@ -113,11 +113,6 @@
     text-overflow: ellipsis;
 
     margin-bottom: 4px;
-    background-color: var(--white);
-}
-
-.catalog__item-text:hover {
-    overflow: visible;
 }
 
 .catalog__item-text:hover {
