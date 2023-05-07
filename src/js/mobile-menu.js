@@ -11,7 +11,12 @@
     link.addEventListener('click', () => {
       refs.menu.classList.remove('is-open');
       document.body.classList.remove('is-open');
-    })
+    });
+
+    link.addEventListener('touchend', () => {
+      refs.menu.classList.remove('is-open');
+      document.body.classList.remove('is-open');
+    });
   });
   function toggleMenu() {
     refs.menu.classList.toggle('is-open');
