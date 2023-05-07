@@ -52,6 +52,7 @@
   }
   .item {
     width: 342px;
+    height: 260px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -85,5 +86,6 @@
   }
   .item {
     width: 576px;
+    height: 422px;
   }
 }
