@@ -183,6 +183,10 @@
     display: flex;
     gap: 40px;
   }
+
+  .header-number {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1280px) {
