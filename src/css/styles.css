@@ -72,6 +72,6 @@ body {
 }
 
 .push-button:active {
-  transform: scale(0.9);
+  transform: scale(0.95);
   transition: 200ms;
 }
