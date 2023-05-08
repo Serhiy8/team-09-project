@@ -12,9 +12,9 @@
   justify-content: space-between;
 }
 
-.header-logo {
+.header-logo,
+.header-logo-mobile {
   display: flex;
-  align-items: end;
   flex-direction: row;
   gap: 4px;
   font-size: 12px;
@@ -22,6 +22,13 @@
   letter-spacing: -0.03em;
 
   color: #ffffff;
+}
+.header-logo {
+  align-items: end;
+}
+
+.header-logo-mobile {
+  align-items: center;
 }
 
 .header-logo img {
