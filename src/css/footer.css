@@ -5,10 +5,8 @@
 }
 
 .footer-container {
-  /*  */
 }
 
-/*  */
 .logo-menu {
   display: flex;
   flex-wrap: wrap;
@@ -17,11 +15,11 @@
 
 .footer-logo {
   display: block;
-  /*  */
   margin-bottom: 40px;
 }
 
 .footer-logo-icon {
+  margin: 0;
   width: 40px;
   height: 40px;
   fill: #ffffff;
@@ -200,3 +198,40 @@
     margin-right: 350px;
   }
 }
+
+/* hover effect +++ */
+
+.footer-menu-item a {
+  position: relative;
+}
+
+.footer-menu-item a:hover {
+  color: #fbfbfb;
+}
+
+.footer-menu-item a::after,
+.footer-menu-item a:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  border-radius: 1.5px;
+  background-color: #fbfbfb;
+  transition: 250ms;
+}
+
+.footer-menu-item a::after {
+  left: 0;
+  bottom: -6px;
+}
+
+.footer-menu-item a::before {
+  right: 0;
+  top: -9px;
+}
+.footer-menu-item a:hover::after,
+.footer-menu-item a:hover::before {
+  width: 100%;
+}
+
+/* hover effect  === */
