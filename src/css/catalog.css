@@ -41,6 +41,10 @@
 
 }
 
+.catalog__overlay img {
+    user-select: none;
+}
+
 .catalog__item-info {
     position: absolute;
     top: 0;
