@@ -248,8 +248,9 @@ img {
     width: 282px;
     margin-bottom: 77px;
   }
-  
-.hero-watch-hand {
- margin-left: auto;
- max-width: 676px;
+
+  .hero-watch-hand {
+    margin-left: auto;
+    max-width: 676px;
+  }
 }
