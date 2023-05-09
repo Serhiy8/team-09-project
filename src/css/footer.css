@@ -44,7 +44,6 @@
   line-height: calc(18 / 14);
   color: #ffffff;
   width: 140px;
-  height: 54px;
   margin-bottom: 40px;
 }
 
@@ -138,7 +137,7 @@
     justify-content: space-between;
   }
   .logo-adress {
-    margin-right: 136px;
+    margin-right: 152px;
   }
 
   .footer-phon {
