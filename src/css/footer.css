@@ -16,6 +16,7 @@
 .footer-logo {
   display: block;
   margin-bottom: 40px;
+  width: 40px;
 }
 
 .footer-logo-icon {
@@ -124,6 +125,10 @@
 
   .footer-container {
     width: 768px;
+  }
+
+  .footer-logo {
+    width: 50px;
   }
 
   .footer-logo-icon {
